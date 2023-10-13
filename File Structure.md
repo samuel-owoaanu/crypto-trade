@@ -1,0 +1,30 @@
+- app/
+  - Controllers/
+    - TaskController.php
+  - Models/
+    - Task.php
+  - Views/
+    - task-list.php
+- public/
+  - index.php
+  - css/
+    - styles.css
+  - js/
+    - script.js
+- config/
+  - database.php
+  - app.php
+- resources/
+  - views/
+    - layouts/
+      - header.php
+      - footer.php
+  - sass/
+- vendor/
+- tests/
+  - Feature/
+    - TaskTest.php
+- .gitignore
+- composer.json
+- composer.lock
+- README.md

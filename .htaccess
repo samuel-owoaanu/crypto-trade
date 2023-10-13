@@ -1,0 +1,133 @@
+# Enable the rewrite engine
+RewriteEngine On
+
+# Set the base directory for rewriting (adjust this if your app is not in the root directory)
+RewriteBase /crypto-trade/
+
+# Block access to sensitive files and directories
+# These include .htaccess, .htpasswd, and other configuration files
+<FilesMatch "^\.ht">
+    Require all denied
+</FilesMatch>
+
+# Block access to certain file types
+# <FilesMatch "\.(php|pl|py|cgi|html?|xml|exe|dll|phtml|pht|pHp|pHp3|inc|jsp|asp|aspx|sh|bat|cmd|com|vbs)$">
+#     Require all denied
+# </FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
+
+# Set the default character set for responses
+AddDefaultCharset UTF-8
+
+# Force HTTPS (uncomment these lines if you have an SSL certificate)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove www from the domain (uncomment if needed)
+# RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+# RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Redirect trailing slashes to remove them
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/crypto-trade/$ /$1 [R=301,L]
+
+# Redirect to the public/index.php file (for PHP applications)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^(.*)$ public/index.php [L]
+
+# Add more custom rules as needed for your specific application
+
+# Enable Gzip compression for certain file types (uncomment if your server supports it)
+# <IfModule mod_deflate.c>
+#     AddOutputFilterByType DEFLATE text/plain
+#     AddOutputFilterByType DEFLATE text/html
+#     AddOutputFilterByType DEFLATE text/xml
+#     AddOutputFilterByType DEFLATE text/css
+#     AddOutputFilterByType DEFLATE application/xml
+#     AddOutputFilterByType DEFLATE application/xhtml+xml
+#     AddOutputFilterByType DEFLATE application/rss+xml
+#     AddOutputFilterByType DEFLATE application/javascript
+#     AddOutputFilterByType DEFLATE application/x-javascript
+# </IfModule>
+
+# Set the server timezone (adjust to your location)
+# <IfModule mod_env.c>
+#     SetEnv TZ America/New_York
+# </IfModule>
+
+# Disable server signature (for improved security)
+ServerSignature Off
+
+# Set security headers (adjust as needed)
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header always set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+# Limit the maximum request size (adjust as needed)
+# <IfModule mod_fcgid.c>
+#     MaxRequestLen 134217728
+# </IfModule>
+
+# Disable ETag (improves caching)
+FileETag None
+
+# Set cache-control headers for static assets (adjust as needed)
+# <IfModule mod_headers.c>
+#     <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+#         Header set Cache-Control "max-age=2592000, public"
+#     </FilesMatch>
+# </IfModule>
+
+# Compress text files for faster loading (uncomment if your server supports it)
+# <IfModule mod_gzip.c>
+#     mod_gzip_on Yes
+#     mod_gzip_dechunk Yes
+#     mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+#     mod_gzip_item_include handler ^cgi-script$
+#     mod_gzip_item_include mime ^text/.*
+#     mod_gzip_item_include mime ^application/x-javascript.*
+#     mod_gzip_item_exclude mime ^image/.*
+#     mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+# </IfModule>
+
+# Redirect error pages to a custom error page (create the error page)
+# ErrorDocument 403 /403.html
+ErrorDocument 404 /crypto-trade/404.html
+# ErrorDocument 500 /500.html
+
+# Additional security measures, such as IP blocking, can be added here
+
+# Secure directory permissions (if using Unix-based systems)
+# <IfModule mod_authz_core.c>
+#     <Directory />
+#         Require all denied
+#     </Directory>
+# </IfModule>
+
+# Additional settings and security measures can be added based on your application's needs
+
+# Prevent access to hidden files (e.g., .git, .svn, .hg)
+RedirectMatch 404 /\.(git|svn|hg|htaccess|env)
+
+# Redirect specific old URLs to new ones
+# Redirect 301 /old-url /new-url
+
+# Prevent access to specific files and directories (adjust as needed)
+# <FilesMatch "(config\.php|\.env|\.gitignore|\.htaccess|readme\.md|composer\.json)">
+#     Require all denied
+# </FilesMatch>
+
+# Add more rules as needed for your specific production environment
+
+# Add custom headers (e.g., content security policy)
+# Header set Content-Security-Policy "default-src 'self'"
+
+# Enable HTTP/2 (uncomment if your server supports it)
+# <IfModule mod_http2.c>
+#     Protocols h2 http/1.1
+# </IfModule>
