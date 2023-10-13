@@ -1,92 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 
 <head>
-    <!-- Basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link rel="shortcut icon" href="images/favicon.png" type="">
-    <!-- get the title from backend code -->
-    <title> <?php echo $pageTitle ?> </title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- bootstrap core css -->
-    <link rel="stylesheet" type="text/css" href='public/css/bootstrap.css' />
+  <!-- Bootstrap Min CSS -->
+  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <!-- Animate Min CSS -->
+  <link rel="stylesheet" href="public/css/animate.min.css">
+  <!-- Font Awesome Min CSS -->
+  <link rel="stylesheet" href="public/css/fontawesome.min.css">
 
-    <!-- fonts style -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--owl slider stylesheet -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
-    <!-- font awesome style -->
-    <link href="public/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Box Icons Min CSS -->
+  <link rel="stylesheet" href="public/css/boxicons.min.css">
+  <!-- Flaticon CSS -->
+  <link rel="stylesheet" href="public/css/flaticon.css">
+  <!-- Owl Carousel Min CSS -->
+  <link rel="stylesheet" href="public/css/owl.carousel.min.css">
+  <!-- Magnific Popup Min CSS -->
+  <link rel="stylesheet" href="public/css/magnific-popup.min.css">
+  <!-- Nice Select CSS -->
+  <link rel="stylesheet" href="public/css/nice-select.css">
+  <!-- Mean Menu CSS -->
+  <link rel="stylesheet" href="public/css/meanmenu.css">
+  <!-- Progress Circle Min CSS -->
+  <link rel="stylesheet" href="public/css/progresscircle.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="public/css/style.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="public/css/responsive.css">
 
-    <!-- Custom styles for this template -->
-    <link href="public/css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
-    <link href="public/css/responsive.css" rel="stylesheet" />
-
+  <title>crypvilla - Home</title>
+  <link rel="icon" type="image/png" href="./images/logo_head.png">
+  <script src="//code-eu1.jivosite.com/widget/sMKAPT6jhn" async></script>
 </head>
 
 <body>
 
-    <div class="hero_area">
-
-        <div class="hero_bg_box">
-            <div class="bg_img_box">
-                <img src="public/images/hero-bg.png" alt="">
-            </div>
-        </div>
+  <!-- Start Preloader Area -->
+  <!-- ----- foolish-purple---- -->
+  <!-- End Preloader Area -->
 
 
-<!-- header section strats -->
-<header class="header_section">
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg custom_nav-container ">
-      <a class="navbar-brand" href="index.html">
-        <span>
-          Tradewave
-        </span>
-      </a>
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class=""> </span>
-      </button>
+  <!-- Start Header Area -->
+  <header class="header-area">
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav  ">
-          <li class="nav-item active">
-            <a class="nav-link" href="crypto-trade">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about"> About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="service">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="why">Why Us</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="/team">Team</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-          </li>
-          <form class="form-inline">
-            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-              <i class="fa fa-search" aria-hidden="true"></i>
-            </button>
-          </form>
-        </ul>
+    <!-- Start Top Header -->
+    <div class="top-header" style="background: #000 !important">
+      <div class="row align-items-center">
+
+        <iframe src="https://widget.coinlib.io/widget?type=horizontal_v2&amp;theme=dark&amp;pref_coin_id=1505&amp;invert_hover=" width="100%" height="36px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:-15px;padding:0;"></iframe>
+
+
+
       </div>
-    </nav>
-  </div>
-</header>
-<!-- end header section -->
+    </div>
+    <!-- End Top Header -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area" style="background: #0d141e !important;margin:0px !important">
+      <div class="evolta-responsive-nav">
+        <div class="container">
+          <div class="evolta-responsive-menu">
+            <div class="logo">
+              <a href="index.php">
+                <i style="color:white;  font-size: 30px;">crypvilla</i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="evolta-nav">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md navbar-light">
+            <a class="navbar-brand" href="index.php">
+              <!-- <img src="./images/logo.png" alt="logo" style="height:50px;width:50px;">  -->
+            </a>
+            <i style="color:aliceblue">Crypvilla</i>
+
+            <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a href="faq.php" class="nav-link">FAQ </a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+
+                <li class="nav-item"><a href="wallet.php" class="nav-link">Wallet</a></li>
+
+                <li class="nav-item"><a href="logout.php" class="nav-link">logout</a> </li>
+                </li>
+              </ul>
+
+              <div class="others-options">
+
+
+
+
+                <!-- <a href="logout.php" class="btn btn-primary">LOG-OUT</a> -->
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End Navbar Area -->
+
+  </header>

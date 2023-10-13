@@ -1,28 +1,122 @@
+<!-- Start Footer Area -->
+<footer class="footer-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="single-footer-widget">
+          <div class="logo">
+            <a href="#"><img src="public/images/logo.png" alt="image" style="margin-left: -20px"></a>
+            <p>crypvilla is a premier crypto trading firm. aimed at making life better by trading the crypto markets highs and lows for good profit, to ease the lives of our investor’s</p>
+          </div>
 
-  <!-- footer section -->
-  <section class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"><?php echo date('Y'); ?></span> Tradewave
-        <!-- <a href="https://html.design/">Free Html Templates</a> -->
-      </p>
+          <ul class="social">
+            <li><a href="#" target="_blank"><i class="flaticon-facebook-letter-logo"></i></a></li>
+            <li><a href="#" target="_blank"><i class="flaticon-twitter-black-shape"></i></a></li>
+            <li><a href="#" target="_blank"><i class="flaticon-instagram-logo"></i></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="single-footer-widget">
+          <h3>Useful Links</h3>
+
+          <ul class="footer-services-list">
+            <li><a href="faq.php">FAQ</a></li>
+
+
+            <li><a href="subscriptions.php">Investment Packages</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="single-footer-widget">
+          <h3>Quick Links</h3>
+
+          <ul class="quick-links-list">
+            <li><a href="#">Contact us</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="single-footer-widget">
+          <h3>Contacts</h3>
+
+          <ul class="footer-contact-list">
+            <li><span>Email:</span> <a href="#">info@crypvilla.one</a></li>
+            <li><span>Phone:</span> <a href="#">+1 (21) 2729-0149</a></li>
+            <li><span>address :</span> <a href="#">71-75 Shelton Street, London, Greater London, United Kingdom, WC2H 9JQ</a></li>
+
+          </ul>
+        </div>
+      </div>
     </div>
-  </section>
-  <!-- footer section -->
+  </div>
+  <div class="copyright-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 col-md-12 col-sm-">
+          <p style="text-align: center !important">Copyright 2021 <a href="#">crypvilla</a>. All Rights Reserved, Designed by top layer technologies TECH-ARQUE</p>
+        </div>
 
-  <!-- jQery -->
-  <script type="text/javascript" src="public/js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script type="text/javascript" src="public/js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- custom js -->
-  <script type="text/javascript" src="public/js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
+
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End Footer Area -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery Min JS -->
+<script src="public/js/jquery.min.js"></script>
+<!-- Popper Min JS -->
+<script src="public/js/popper.min.js"></script>
+<!-- Bootstrap Min JS -->
+<script src="public/js/bootstrap.min.js"></script>
+<!-- Owl Carousel Min JS -->
+<script src="public/js/owl.carousel.min.js"></script>
+<!-- Parallax Min JS -->
+<script src="public/js/parallax.min.js"></script>
+<!-- Magnific Popup Min JS -->
+<script src="public/js/jquery.magnific-popup.min.js"></script>
+<!-- Nice Select Min JS -->
+<script src="public/js/jquery.nice-select.min.js"></script>
+<!-- Mean Menu JS -->
+<script src="public/js/jquery.meanmenu.js"></script>
+<!-- Progress Circle Min JS -->
+<script src="public/js/progresscircle.min.js"></script>
+<!-- WOW Min JS -->
+<script src="public/js/wow.min.js"></script>
+<!-- Form Validator Min JS -->
+<script src="public/js/form-validator.min.js"></script>
+<!-- Contact Form Min JS -->
+<script src="public/js/contact-form-script.js"></script>
+<!-- Main JS -->
+<script src="public/js/main.js"></script>
+</body>
+
+
+</html>
