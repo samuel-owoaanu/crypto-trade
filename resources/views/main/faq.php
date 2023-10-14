@@ -1,10 +1,11 @@
+<?php include(__DIR__ . '/../layouts/header.php'); ?>
 <!-- Start Page Title Area -->
-<div class="page-title-area" style="background-image: url(analysis-analytics-analyze-app.jpg)">
+<div class="page-title-area" style="background-image: url(<?=$assetManager->getImgSrc('analysis-analytics-analyze-app.jpg')?>">
     <div class="container">
         <div class="page-title-content">
             <h2>FAQ</h2>
             <ul>
-                <li><a href="index.php">Home</a></li>
+                <li><a href="home">Home</a></li>
                 <li>FAQ</li>
             </ul>
         </div>

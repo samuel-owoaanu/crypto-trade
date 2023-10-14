@@ -31,11 +31,11 @@ AddDefaultCharset UTF-8
 
 # Redirect trailing slashes to remove them
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)/crypto-trade/$ /$1 [R=301,L]
+RewriteRule ^(.+)/$ crypto-trade/$1 [R=301,L]
 
 # Redirect to the public/index.php file (for PHP applications)
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ public/index.php [L]
 
 # Add more custom rules as needed for your specific application

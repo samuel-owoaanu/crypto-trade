@@ -1,5 +1,6 @@
-<?php $pageTitle = "Tradewave" ?>
 <?php include(__DIR__ . '/../layouts/header.php'); ?>
+<?php $pageTitle = "Tradewave"; ?>
+
 <!-- Start Main Banner Area -->
 <div class="main-banner" style="height: 700px !important;width:100%">
     <div class="container-fluid">
@@ -11,6 +12,7 @@
                     <div class="btn-box">
                         <a href="subscription.php" class="btn btn-primary">invest-now</a>
                     </div>
+                   
                 </div>
             </div>
         </div>

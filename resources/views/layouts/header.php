@@ -1,3 +1,4 @@
+<?php global $assetManager; ?>
 <!DOCTYPE html>
 <html lang="eng">
 
@@ -7,33 +8,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap Min CSS -->
-  <link rel="stylesheet" href="public/css/bootstrap.min.css">
+  <link rel="stylesheet" href= " <?= $assetManager->getCssLink("bootstrap.min.css"); ?>"); ?>">
   <!-- Animate Min CSS -->
-  <link rel="stylesheet" href="public/css/animate.min.css">
+  <link rel="stylesheet" href=" <?= $assetManager->getCssLink("animate.min.css"); ?>"); ?>">
   <!-- Font Awesome Min CSS -->
-  <link rel="stylesheet" href="public/css/fontawesome.min.css">
+  <link rel="stylesheet" href= "<?= $assetManager->getCssLink("fontawesome.min.css"); ?>">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); ?>">
 
 
   <!-- Box Icons Min CSS -->
-  <link rel="stylesheet" href="public/css/boxicons.min.css">
+  <link rel="stylesheet" href="<?= $assetManager->getCssLink("boxicons.min.css"); ?>">
   <!-- Flaticon CSS -->
-  <link rel="stylesheet" href="public/css/flaticon.css">
+  <link rel="stylesheet" href="<?= $assetManager->getCssLink("flaticon.css"); ?>">
   <!-- Owl Carousel Min CSS -->
-  <link rel="stylesheet" href="public/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="<?= $assetManager->getCssLink("owl.carousel.min.css"); ?>">
   <!-- Magnific Popup Min CSS -->
-  <link rel="stylesheet" href="public/css/magnific-popup.min.css">
+  <link rel="stylesheet" href="<?= $assetManager->getCssLink("magnific-popup.min.css"); ?>">
   <!-- Nice Select CSS -->
-  <link rel="stylesheet" href="public/css/nice-select.css">
+  <link rel="stylesheet" href="<?= $assetManager->getCssLink("nice-select.css"); ?>">
   <!-- Mean Menu CSS -->
-  <link rel="stylesheet" href="public/css/meanmenu.css">
+  <link rel="stylesheet" href="<?= $assetManager->getCssLink("meanmenu.css"); ?>">
   <!-- Progress Circle Min CSS -->
-  <link rel="stylesheet" href="public/css/progresscircle.min.css">
+  <link rel="stylesheet" href="<?= $assetManager->getCssLink("progresscircle.min.css"); ?>">
   <!-- Style CSS -->
-  <link rel="stylesheet" href="public/css/style.css">
+  <link rel="stylesheet" href="<?= $assetManager->getCssLink("style.css"); ?>">
   <!-- Responsive CSS -->
-  <link rel="stylesheet" href="public/css/responsive.css">
+  <link rel="stylesheet" href="<?= $assetManager->getCssLink("responsive.css"); ?>">
 
   <title>crypvilla - Home</title>
   <link rel="icon" type="image/png" href="./images/logo_head.png">
@@ -87,7 +88,7 @@
 
             <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
               <ul class="navbar-nav">
-                <li class="nav-item"><a href="faq.php" class="nav-link">FAQ </a></li>
+                <li class="nav-item"><a href="../faq" class="nav-link">FAQ </a></li>
                 <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
 
                 <li class="nav-item"><a href="wallet.php" class="nav-link">Wallet</a></li>
